@@ -1,0 +1,63 @@
+:root {
+    --sa-green: #007A4D;
+    --sa-yellow: #FDB913;
+    --sa-blue: #0032A0;
+    --sa-red: #E03C31;
+    --sa-black: #000000;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('/api/placeholder/1200/400') center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.category-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-custom {
+    background-color: var(--sa-green);
+}
+
+.btn-primary {
+    background-color: var(--sa-green);
+    border-color: var(--sa-green);
+}
+
+.btn-primary:hover {
+    background-color: #005836;
+    border-color: #005836;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.price-tag {
+    color: var(--sa-green);
+    font-weight: bold;
+}
+
+.seller-rating {
+    color: var(--sa-yellow);
+}
