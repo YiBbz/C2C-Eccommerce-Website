@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub - Professional Services Marketplace</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.php">ServiceHub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.php?category=home">Home Services</a></li>
+                                <li><a class="dropdown-item" href="services.php?category=business">Business Services</a></li>
+                                <li><a class="dropdown-item" href="services.php?category=tech">Tech Support</a></li>
+                                <li><a class="dropdown-item" href="services.php?category=education">Education</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="services.php">All Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="providers.php">Service Providers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.php">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="input-group me-3">
+                            <input type="text" class="form-control" placeholder="Search services...">
+                            <button class="btn btn-outline-light" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="cart.php"><i class="fas fa-shopping-cart"></i> <span class="badge bg-danger cart-count">0</span></a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="login.php">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.php">Register</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="become-provider.php">Become a Provider</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Find the perfect service for your needs</h1>
+                    <p class="lead">Connect with verified professionals for home, business, tech, and educational services.</p>
+                    <div class="mt-4">
+                        <a href="services.php" class="btn btn-primary btn-lg me-2">Browse Services</a>
+                        <a href="register.php" class="btn btn-outline-primary btn-lg">Join Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="Service professionals" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Popular Service Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-home fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Home Services</h5>
+                            <p class="card-text">Cleaning, repairs, gardening, and more</p>
+                            <a href="services.php?category=home" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-briefcase fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Business Services</h5>
+                            <p class="card-text">Consulting, accounting, marketing</p>
+                            <a href="services.php?category=business" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-laptop fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Tech Support</h5>
+                            <p class="card-text">IT services, web development, repair</p>
+                            <a href="services.php?category=tech" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Tutoring, coaching, language learning</p>
+                            <a href="services.php?category=education" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Featured Services</h2>
+                <a href="services.php" class="btn btn-outline-primary">View All</a>
+            </div>
+            <div class="row g-4">
+                <!-- Service cards will be dynamically loaded from database -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Home Cleaning Service">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary mb-2">Home</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>4.8 (124)</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Professional Home Cleaning</h5>
+                            <p class="card-text">Complete home cleaning service by verified professionals with eco-friendly products.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price fw-bold">From $75</span>
+                                <a href="service-details.php?id=1" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary mb-2">Tech</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>4.9 (87)</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Custom Website Development</h5>
+                            <p class="card-text">Professional custom website design and development for your business needs.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price fw-bold">From $450</span>
+                                <a href="service-details.php?id=2" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="/api/placeholder/400/250" class="card-img-top" alt="Business Consulting">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary mb-2">Business</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>4.7 (56)</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Business Strategy Consulting</h5>
+                            <p class="card-text">Expert business consulting to help your company grow and navigate challenges.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price fw-bold">From $120/hr</span>
+                                <a href="service-details.php?id=3" class="btn btn-sm btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">How ServiceHub Works</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-search fa-2x"></i>
+                        </div>
+                        <h4>1. Find a Service</h4>
+                        <p>Browse categories or search for the specific service you need.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-calendar-check fa-2x"></i>
+                        </div>
+                        <h4>2. Book Online</h4>
+                        <p>Choose a time, provide details, and book with secure payment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                            <i class="fas fa-thumbs-up fa-2x"></i>
+                        </div>
+                        <h4>3. Get It Done</h4>
+                        <p>A verified professional delivers the service at your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The cleaning service was fantastic! The team was prompt, professional, and left my house spotless. Will definitely use them again."</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex align-items-center">
+                                <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Sarah Johnson</h6>
+                                    <small class="text-muted">Home Cleaning Service</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"My business website looks amazing! The developer was very attentive to my requirements and delivered exactly what I needed. Highly recommended!"</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex align-items-center">
+                                <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Michael Brown</h6>
+                                    <small class="text-muted">Website Development</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"The business consultation provided valuable insights that helped us increase our revenue by 30%. The consultant was knowledgeable and professional."</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="d-flex align-items-center">
+                                <img src="/api/placeholder/50/50" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Amanda Wilson</h6>
+                                    <small class="text-muted">Business Consulting</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Get the ServiceHub App</h2>
+                    <p class="lead">Book services on the go, track your appointments, and receive real-time updates.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="#" class="btn btn-dark">
+                            <i class="fab fa-apple me-2"></i> App Store
+                        </a>
+                        <a href="#" class="btn btn-dark">
+                            <i class="fab fa-google-play me-2"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/api/placeholder/500/300" alt="ServiceHub App" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Subscribe to receive special offers, service updates, and helpful tips.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form class="row g-2" action="subscribe.php" method="post">
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" placeholder="Your email address" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-light w-100">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>ServiceHub</h5>
+                    <p>Connecting customers with qualified service professionals since 2023.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.php?category=home" class="text-white">Home Services</a></li>
+                        <li><a href="services.php?category=business" class="text-white">Business Services</a></li>
+                        <li><a href="services.php?category=tech" class="text-white">Tech Support</a></li>
+                        <li><a href="services.php?category=education" class="text-white">Education</a></li>
+                        <li><a href="services.php" class="text-white">All Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.php" class="text-white">About Us</a></li>
+                        <li><a href="how-it-works.php" class="text-white">How It Works</a></li>
+                        <li><a href="careers.php" class="text-white">Careers</a></li>
+                        <li><a href="press.php" class="text-white">Press</a></li>
+                        <li><a href="blog.php" class="text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.php" class="text-white">Contact Us</a></li>
+                        <li><a href="faq.php" class="text-white">FAQs</a></li>
+                        <li><a href="terms.php" class="text-white">Terms of Service</a></li>
+                        <li><a href="privacy.php" class="text-white">Privacy Policy</a></li>
+                        <li><a href="help.php" class="text-white">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 ServiceHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <img src="/api/placeholder/30/20" alt="Visa" class="me-2">
+                        <img src="/api/placeholder/30/20" alt="Mastercard" class="me-2">
+                        <img src="/api/placeholder/30/20" alt="PayPal" class="me-2">
+                        <img src="/api/placeholder/30/20" alt="Apple Pay">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
