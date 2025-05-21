@@ -4,46 +4,64 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Service extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'provider_id',
-        'category_id',
         'title',
         'description',
         'price',
-        'duration',
-        'is_available',
-        'cover_image'
+        'status',
+        'category',
+        'delivery_time',
+        'revisions',
+        'user_id',
     ];
 
     protected $casts = [
         'price' => 'decimal:2',
-        'is_available' => 'boolean'
+        'delivery_time' => 'integer',
+        'revisions' => 'integer',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
     ];
 
-    public function provider(): BelongsTo
+    public function user()
     {
-        return $this->belongsTo(Provider::class);
+        return $this->belongsTo(User::class);
     }
 
-    public function category(): BelongsTo
+    public function orders()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Order::class);
     }
 
-    public function bookings(): HasMany
-    {
-        return $this->hasMany(Booking::class);
-    }
-
-    public function reviews(): HasMany
+    public function reviews()
     {
         return $this->hasMany(Review::class);
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', 'active');
+    }
+
+    public function scopeInactive($query)
+    {
+        return $query->where('status', 'inactive');
+    }
+
+    public function scopeByCategory($query, $category)
+    {
+        return $query->where('category', $category);
+    }
+
+    public function scopePriceRange($query, $min, $max)
+    {
+        return $query->whereBetween('price', [$min, $max]);
     }
 }

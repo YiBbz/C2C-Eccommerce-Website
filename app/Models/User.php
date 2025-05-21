@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -39,38 +41,32 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'password' => 'hashed',
-    ];
-
-    public function hasRole($role)
+    protected function casts(): array
     {
-        return $this->role === $role;
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+            'is_active' => 'boolean',
+        ];
     }
 
-    public function serviceProvider()
+    public function services()
     {
-        return $this->hasOne(ServiceProvider::class);
+        return $this->hasMany(Service::class);
     }
 
-    public function bookings()
+    public function isAdmin(): bool
     {
-        return $this->hasMany(Booking::class, 'customer_id');
+        return $this->role === 'admin';
     }
 
-    public function reviews()
+    public function isProvider(): bool
     {
-        return $this->hasMany(Review::class, 'customer_id');
+        return $this->role === 'provider';
     }
 
-    public function sentMessages()
+    public function isCustomer(): bool
     {
-        return $this->hasMany(Message::class, 'sender_id');
-    }
-
-    public function receivedMessages()
-    {
-        return $this->hasMany(Message::class, 'receiver_id');
+        return $this->role === 'customer';
     }
 }
