@@ -10,7 +10,6 @@
   <script setup>
   import { ref } from 'vue'
   import axios from 'axios'
-  import { emit } from 'vue'
   import AppLayout from '@/Layouts/AppLayout.vue'
   
   const form = ref({
