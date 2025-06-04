@@ -55,7 +55,9 @@ const logout = async () => {
                                 <span class="block text-indigo-600">freelance services</span>
                             </h1>
                             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                Connect with talented freelancers and get your projects done. From web development to graphic design, find the perfect match for your needs.
+                                Discover a wide range of freelance services to help you with your projects. 
+                                Whether you need web development, graphic design, or digital marketing, our marketplace has you covered.
+                                Connect able freelancers with clients looking for their expertise.
                             </p>
                             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div class="rounded-md shadow">
