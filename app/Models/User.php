@@ -50,9 +50,9 @@ class User extends Authenticatable implements MustVerifyEmail
         ];
     }
 
-    public function services()
+    public function serviceProvider()
     {
-        return $this->hasMany(Service::class);
+        return $this->hasOne(ServiceProvider::class);
     }
 
     public function isAdmin(): bool

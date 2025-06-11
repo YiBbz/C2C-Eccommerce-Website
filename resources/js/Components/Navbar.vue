@@ -9,7 +9,7 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6">
           <Link :href="route('welcome')" class="nav-link">Home</Link>
-          <Link href="/products" class="nav-link">Services</Link>
+          <Link :href="route('services')" class="nav-link">Services</Link>
           <Link href="/about" class="nav-link">About</Link>
           <Link href="/contact" class="nav-link">Contact</Link>
         </div>
@@ -55,7 +55,7 @@
     <div v-if="mobileOpen" class="md:hidden px-4 pb-4">
       <div class="flex flex-col space-y-2">
         <Link :href="route('welcome')" class="nav-link">Home</Link>
-        <Link href="/products" class="nav-link">Services</Link>
+        <Link :href="route('services')" class="nav-link">Services</Link>
         <Link href="/about" class="nav-link">About</Link>
         <Link href="/contact" class="nav-link">Contact</Link>
         <template v-if="isAuthenticated">
@@ -96,7 +96,7 @@ const dashboardUrl = computed(() => {
     case 'customer':
       return route('customer.dashboard')
     default:
-      return route('dashboard')
+      return route('welcome')
   }
 })
 

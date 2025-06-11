@@ -46,10 +46,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/services', [ServiceController::class, 'index']);
     Route::apiResource('services', ServiceController::class)->except(['index']);
 
-    // Admin routes
-    Route::middleware('admin')->group(function () {
-        Route::get('/admin/stats', [AdminController::class, 'stats']);
-    });
+   
 });
 
 Route::post('/register', function (Request $request) {

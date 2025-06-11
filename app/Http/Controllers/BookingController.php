@@ -7,6 +7,7 @@ use App\Models\Booking;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Inertia\Inertia;
 
 class BookingController extends Controller
 {
@@ -36,11 +37,9 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
+        // For initial booking, only service_id is required
         $validated = $request->validate([
             'service_id' => 'required|exists:services,id',
-            'booking_date' => 'required|date|after:now',
-            'location' => 'required_if:service.location_type,onsite,both',
-            'special_instructions' => 'nullable|string|max:1000',
         ]);
 
         $service = Service::findOrFail($validated['service_id']);
@@ -48,16 +47,26 @@ class BookingController extends Controller
         $booking = new Booking();
         $booking->service_id = $service->id;
         $booking->customer_id = Auth::id();
-        $booking->provider_id = $service->service_provider_id;
-        $booking->booking_date = $validated['booking_date'];
-        $booking->location = $validated['location'] ?? null;
-        $booking->special_instructions = $validated['special_instructions'] ?? null;
+        // Assuming service model has a provider_id or a relationship to get the provider_id
+        // If your Service model has a direct provider_id foreign key:
+        $booking->provider_id = $service->provider_id;
+        // If your Service model has a relationship to Provider, and Provider has a user_id:
+        // $booking->provider_id = $service->provider->user_id;
+        
+        // Set initial status to pending
         $booking->status = 'pending';
-        $booking->total_amount = $service->price;
+        
+        // You can set other fields to null or default values to be negotiated later in chat
+        // $booking->booking_date = null;
+        // $booking->total_amount = null;
+        // $booking->location = null;
+        // $booking->special_instructions = null;
+
         $booking->save();
 
+        // Redirect to the booking show page for negotiation/chat
         return redirect()->route('bookings.show', $booking)
-            ->with('success', 'Booking created successfully. Please wait for provider confirmation.');
+            ->with('success', 'Booking initiated. Please discuss details with the provider via chat.');
     }
 
     /**
@@ -67,9 +76,12 @@ class BookingController extends Controller
     {
         $this->authorize('view', $booking);
 
-        $booking->load(['service', 'service.provider', 'customer']);
+        // Load relationships including messages for the chat
+        $booking->load(['service.provider.user', 'customer.user', 'messages.sender']);
 
-        return view('bookings.show', compact('booking'));
+        return Inertia::render('BookingShow', [
+            'booking' => $booking,
+        ]);
     }
 
     /**

@@ -23,6 +23,8 @@ class MessageSent implements ShouldBroadcast
     public function __construct(Message $message)
     {
         $this->message = $message;
+        // Load the sender relationship so we can broadcast sender information
+        $this->message->load('sender');
     }
 
     /**
@@ -45,10 +47,16 @@ class MessageSent implements ShouldBroadcast
     public function broadcastWith(): array
     {
         return [
+            'id' => $this->message->id,
             'message' => $this->message->message,
             'sender_id' => $this->message->sender_id,
             'receiver_id' => $this->message->receiver_id,
             'created_at' => $this->message->created_at->toIso8601String(),
+            // Include sender's name in broadcast data
+            'sender' => [
+                'id' => $this->message->sender->id,
+                'name' => $this->message->sender->name,
+            ],
         ];
     }
 } 

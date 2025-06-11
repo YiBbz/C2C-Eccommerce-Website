@@ -30,9 +30,9 @@ class Service extends Model
         'deleted_at' => 'datetime',
     ];
 
-    public function user()
+    public function provider()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Provider::class, 'provider_id');
     }
 
     public function orders()

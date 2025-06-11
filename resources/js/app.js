@@ -34,10 +34,10 @@ axios.interceptors.response.use(
 let loadingTimeout;
 axios.interceptors.request.use(
     config => {
-        const token = localStorage.getItem('token');
-        if (token) {
-            config.headers.Authorization = `Bearer ${token}`;
-        }
+        // const token = localStorage.getItem('token');
+        // if (token) {
+        //     config.headers.Authorization = `Bearer ${token}`;
+        // }
         
         loadingTimeout = setTimeout(() => {
             document.body.classList.add('loading');
