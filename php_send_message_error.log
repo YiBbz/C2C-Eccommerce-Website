@@ -1,0 +1,24 @@
+[06-Jun-2025 20:07:05 Europe/Berlin] send-message.php started
+[06-Jun-2025 20:07:05 Europe/Berlin] Received message data: Receiver ID = 9, Booking ID = , Message = adad...
+[06-Jun-2025 20:07:05 Europe/Berlin] Database connection obtained.
+[06-Jun-2025 20:07:05 Europe/Berlin] Message inserted with ID: 5
+[06-Jun-2025 20:07:07 Europe/Berlin] Pusher event triggered for channel: chat-9
+[06-Jun-2025 20:07:07 Europe/Berlin] send-message.php reached unexpected end.
+[06-Jun-2025 20:09:49 Europe/Berlin] send-message.php started
+[06-Jun-2025 20:09:49 Europe/Berlin] Received message data: Receiver ID = 9, Booking ID = , Message = adad...
+[06-Jun-2025 20:09:49 Europe/Berlin] Database connection obtained.
+[06-Jun-2025 20:09:49 Europe/Berlin] Message inserted with ID: 6
+[06-Jun-2025 20:09:50 Europe/Berlin] Pusher event triggered for channel: chat-9
+[06-Jun-2025 20:09:50 Europe/Berlin] send-message.php reached unexpected end.
+[07-Jun-2025 15:45:00 Europe/Berlin] send-message.php started
+[07-Jun-2025 15:45:00 Europe/Berlin] Received message data: Receiver ID = 9, Booking ID = , Message = I would lik eto book this service...
+[07-Jun-2025 15:45:00 Europe/Berlin] Database connection obtained.
+[07-Jun-2025 15:45:00 Europe/Berlin] Message inserted with ID: 9
+[07-Jun-2025 15:45:01 Europe/Berlin] Pusher event triggered for channel: chat-9
+[07-Jun-2025 15:45:01 Europe/Berlin] send-message.php reached unexpected end.
+[07-Jun-2025 15:45:08 Europe/Berlin] send-message.php started
+[07-Jun-2025 15:45:08 Europe/Berlin] Received message data: Receiver ID = 9, Booking ID = , Message = adadad...
+[07-Jun-2025 15:45:08 Europe/Berlin] Database connection obtained.
+[07-Jun-2025 15:45:08 Europe/Berlin] Message inserted with ID: 10
+[07-Jun-2025 15:45:09 Europe/Berlin] Pusher event triggered for channel: chat-9
+[07-Jun-2025 15:45:09 Europe/Berlin] send-message.php reached unexpected end.

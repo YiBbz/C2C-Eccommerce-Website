@@ -1,23 +1,17 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "build": "vite build",
-        "dev": "vite"
-    },
-    "devDependencies": {
-        "@inertiajs/vue3": "^1.0.0",
-        "@tailwindcss/forms": "^0.5.3",
-        "@vitejs/plugin-vue": "^5.0.0",
-        "autoprefixer": "^10.4.12",
-        "axios": "^1.8.2",
-        "laravel-vite-plugin": "^1.2.0",
-        "postcss": "^8.4.31",
-        "tailwindcss": "^3.2.1",
-        "vite": "^5.0.0",
-        "vue": "^3.4.0"
-    },
-    "dependencies": {
-        "vue-router": "^4.2.0"
-    }
+  "name": "demo2",
+  "version": "1.0.0",
+  "description": "Freelance Marketplace",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
 }

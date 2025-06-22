@@ -1,0 +1,225 @@
+[06-Jun-2025 19:32:09 Europe/Berlin] process-booking.php started
+[06-Jun-2025 19:32:09 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 2
+    [date] => 2025-06-13
+    [time] => 19:36
+    [payment_method] => online
+    [notes] => adadad
+)
+
+[06-Jun-2025 19:32:09 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:32:09 Europe/Berlin] Booking date formatted: 2025-06-13 19:36:00
+[06-Jun-2025 19:32:09 Europe/Berlin] Database error in process-booking.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'notes' in 'field list'
+[06-Jun-2025 19:33:43 Europe/Berlin] process-booking.php started
+[06-Jun-2025 19:33:43 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 2
+    [date] => 2025-06-11
+    [time] => 23:33
+    [payment_method] => online
+    [notes] => adadad
+)
+
+[06-Jun-2025 19:33:43 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:33:43 Europe/Berlin] Booking date formatted: 2025-06-11 23:33:00
+[06-Jun-2025 19:33:43 Europe/Berlin] Booking created successfully with ID: 3
+[06-Jun-2025 19:33:43 Europe/Berlin] Initial message created for booking ID: 3
+[06-Jun-2025 19:33:43 Europe/Berlin] Redirecting to messages.php with booking_id: 3
+[06-Jun-2025 19:33:43 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=3
+[06-Jun-2025 19:59:39 Europe/Berlin] process-booking.php started
+[06-Jun-2025 19:59:39 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 3
+    [date] => 2025-06-16
+    [time] => 22:01
+    [payment_method] => cash
+    [notes] => adadad
+)
+
+[06-Jun-2025 19:59:39 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:59:39 Europe/Berlin] Booking date formatted: 2025-06-16 22:01:00
+[06-Jun-2025 19:59:39 Europe/Berlin] Booking created successfully with ID: 4
+[06-Jun-2025 19:59:39 Europe/Berlin] Initial message created for booking ID: 4
+[06-Jun-2025 19:59:39 Europe/Berlin] Redirecting to messages.php with booking_id: 4
+[06-Jun-2025 19:59:39 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=4
+[11-Jun-2025 14:20:39 Europe/Berlin] process-booking.php started
+[11-Jun-2025 14:20:39 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 5
+    [date] => 2025-06-11
+    [time] => 14:23
+    [payment_method] => online
+    [notes] => 
+)
+
+[11-Jun-2025 14:20:39 Europe/Berlin] Database connection obtained
+[11-Jun-2025 14:20:39 Europe/Berlin] Booking date formatted: 2025-06-11 14:23:00
+[11-Jun-2025 14:20:39 Europe/Berlin] Booking created successfully with ID: 9
+[11-Jun-2025 14:20:39 Europe/Berlin] Initial message created for booking ID: 9
+[11-Jun-2025 14:20:39 Europe/Berlin] Redirecting to messages.php with booking_id: 9
+[11-Jun-2025 14:20:39 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=9
+[13-Jun-2025 11:24:33 Europe/Berlin] process-booking.php started
+[13-Jun-2025 11:24:33 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 5
+    [date] => 2025-06-19
+    [time] => 11:27
+    [payment_method] => online
+    [notes] => 
+)
+
+[13-Jun-2025 11:24:33 Europe/Berlin] Database connection obtained
+[13-Jun-2025 11:24:33 Europe/Berlin] Booking date formatted: 2025-06-19 11:27:00
+[13-Jun-2025 11:24:33 Europe/Berlin] Booking created successfully with ID: 10
+[13-Jun-2025 11:24:33 Europe/Berlin] Initial message created for booking ID: 10
+[13-Jun-2025 11:24:33 Europe/Berlin] Redirecting to messages.php with booking_id: 10
+[13-Jun-2025 11:24:33 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=10
+[17-Jun-2025 14:03:04 Europe/Berlin] process-booking.php started
+[17-Jun-2025 14:03:04 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 1
+    [date] => 2025-06-19
+    [time] => 14:06
+    [payment_method] => online
+    [notes] => 
+)
+
+[17-Jun-2025 14:03:04 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:03:04 Europe/Berlin] Booking date formatted: 2025-06-19 14:06:00
+[17-Jun-2025 14:03:04 Europe/Berlin] Booking created successfully with ID: 1
+[17-Jun-2025 14:03:04 Europe/Berlin] Initial message created for booking ID: 1
+[17-Jun-2025 14:03:04 Europe/Berlin] Redirecting to messages.php with booking_id: 1
+[17-Jun-2025 14:03:04 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=1
+[17-Jun-2025 14:05:22 Europe/Berlin] process-booking.php started
+[17-Jun-2025 14:05:22 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 1
+    [date] => 2025-06-19
+    [time] => 14:06
+    [payment_method] => online
+    [notes] => 
+)
+
+[17-Jun-2025 14:05:22 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:05:22 Europe/Berlin] Booking date formatted: 2025-06-19 14:06:00
+[17-Jun-2025 14:05:22 Europe/Berlin] Booking created successfully with ID: 2
+[17-Jun-2025 14:05:22 Europe/Berlin] Initial message created for booking ID: 2
+[17-Jun-2025 14:05:22 Europe/Berlin] Redirecting to messages.php with booking_id: 2
+[17-Jun-2025 14:05:22 Europe/Berlin] Redirect URL: /demo2/messages.php?booking_id=2
+[17-Jun-2025 14:06:53 Europe/Berlin] process-booking.php started
+[17-Jun-2025 14:06:53 Europe/Berlin] POST data received: Array
+(
+    [service_id] => 1
+    [date] => 2025-06-19
+    [time] => 14:06
+    [payment_method] => online
+    [notes] => 
+)
+
+[17-Jun-2025 14:06:53 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:06:53 Europe/Berlin] Booking date formatted: 2025-06-19 14:06:00
+[17-Jun-2025 14:06:53 Europe/Berlin] Booking created successfully with ID: 3
+[17-Jun-2025 14:06:53 Europe/Berlin] Initial message created for booking ID: 3
+[17-Jun-2025 14:06:53 Europe/Berlin] Redirecting to messages page with booking_id: 3
+[17-Jun-2025 14:06:53 Europe/Berlin] Redirect URL: /demo2/customer-messages.php?booking_id=3
+[18-Jun-2025 00:09:51 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:09:51 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:09:51 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:09:51 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:14:26 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:14:27 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:14:27 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:14:27 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:19:16 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:19:16 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:19:16 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:19:16 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:19:26 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:19:26 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:19:26 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:19:26 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:21:44 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:21:44 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:21:44 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:21:44 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:24:16 Europe/Berlin] process-review.php accessed
+[18-Jun-2025 00:24:16 Europe/Berlin] Received POST data: Array
+(
+    [service_id] => 1
+    [reviewed_id] => 2
+    [booking_id] => 3
+    [rating] => 5
+    [comment] => Amazing!
+)
+
+[18-Jun-2025 00:24:16 Europe/Berlin] Database connection obtained.
+[18-Jun-2025 00:24:16 Europe/Berlin] Checking for existing review with: booking_id=3, reviewer_id=1
+[18-Jun-2025 00:24:16 Europe/Berlin] Executing booking eligibility check with: booking_id=3, reviewer_id=1, service_id=1
+[18-Jun-2025 00:24:16 Europe/Berlin] Attempting to insert review with data: booking_id=3, service_id=1, reviewer_id=1, reviewed_id=2, rating=5, comment=Amazing!
+[18-Jun-2025 00:24:16 Europe/Berlin] PDOException in process-review.php: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'service_id' in 'field list'
+[18-Jun-2025 00:24:16 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:24:16 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:24:16 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:24:16 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+
+[18-Jun-2025 00:26:45 Europe/Berlin] process-review.php accessed
+[18-Jun-2025 00:26:45 Europe/Berlin] Received POST data: Array
+(
+    [service_id] => 1
+    [reviewed_id] => 2
+    [booking_id] => 3
+    [rating] => 5
+    [comment] => Amazing!
+)
+
+[18-Jun-2025 00:26:45 Europe/Berlin] Database connection obtained.
+[18-Jun-2025 00:26:45 Europe/Berlin] Checking for existing review with: booking_id=3, reviewer_id=1
+[18-Jun-2025 00:26:45 Europe/Berlin] Executing booking eligibility check with: booking_id=3, reviewer_id=1, service_id=1
+[18-Jun-2025 00:26:45 Europe/Berlin] Attempting to insert review with data: booking_id=3, service_id=1, reviewer_id=1, reviewed_id=2, rating=5, comment=Amazing!
+[18-Jun-2025 00:26:45 Europe/Berlin] Review inserted successfully. Review ID: 1
+[18-Jun-2025 00:26:45 Europe/Berlin] [service-details.php] Script execution started. auth.php included.
+[18-Jun-2025 00:26:45 Europe/Berlin] [service-details.php] Attempting to find completed bookings for review. Customer ID: 1, Service ID: 1
+[18-Jun-2025 00:26:45 Europe/Berlin] [service-details.php] Found 1 bookings matching review criteria.
+[18-Jun-2025 00:26:45 Europe/Berlin] [service-details.php] Details of first found booking for review: Array
+(
+    [id] => 3
+    [status] => accepted
+    [completion_status] => completed
+)
+

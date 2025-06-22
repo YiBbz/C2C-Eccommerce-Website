@@ -1,0 +1,302 @@
+[06-Jun-2025 19:39:03 Europe/Berlin] process-login.php started
+[06-Jun-2025 19:39:03 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:39:03 Europe/Berlin] POST request received
+[06-Jun-2025 19:39:03 Europe/Berlin] Login attempt for email: demo@gmail.com, Remember Me: No
+[06-Jun-2025 19:39:03 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 19:40:00 Europe/Berlin] process-login.php started
+[06-Jun-2025 19:40:00 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:40:00 Europe/Berlin] POST request received
+[06-Jun-2025 19:40:00 Europe/Berlin] Login attempt for email: demo@gmail.com, Remember Me: No
+[06-Jun-2025 19:40:00 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 19:40:08 Europe/Berlin] process-login.php started
+[06-Jun-2025 19:40:08 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:40:08 Europe/Berlin] POST request received
+[06-Jun-2025 19:40:08 Europe/Berlin] Login attempt for email: demo@gmail.com, Remember Me: No
+[06-Jun-2025 19:40:08 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 19:40:14 Europe/Berlin] process-login.php started
+[06-Jun-2025 19:40:14 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:40:14 Europe/Berlin] POST request received
+[06-Jun-2025 19:40:14 Europe/Berlin] Login attempt for email: demo@gmail.com, Remember Me: No
+[06-Jun-2025 19:40:14 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 19:58:12 Europe/Berlin] process-login.php started
+[06-Jun-2025 19:58:12 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:58:12 Europe/Berlin] POST request received
+[06-Jun-2025 19:58:12 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[06-Jun-2025 19:58:12 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[06-Jun-2025 19:58:12 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[06-Jun-2025 20:00:01 Europe/Berlin] process-login.php started
+[06-Jun-2025 20:00:01 Europe/Berlin] Database connection obtained
+[06-Jun-2025 20:00:01 Europe/Berlin] POST request received
+[06-Jun-2025 20:00:01 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[06-Jun-2025 20:00:01 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 20:00:12 Europe/Berlin] process-login.php started
+[06-Jun-2025 20:00:12 Europe/Berlin] Database connection obtained
+[06-Jun-2025 20:00:12 Europe/Berlin] POST request received
+[06-Jun-2025 20:00:12 Europe/Berlin] Login attempt for email: demo5@demo.com, Remember Me: No
+[06-Jun-2025 20:00:12 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 20:00:20 Europe/Berlin] process-login.php started
+[06-Jun-2025 20:00:20 Europe/Berlin] Database connection obtained
+[06-Jun-2025 20:00:20 Europe/Berlin] POST request received
+[06-Jun-2025 20:00:20 Europe/Berlin] Login attempt for email: demo5@demo.com, Remember Me: No
+[06-Jun-2025 20:00:20 Europe/Berlin] Login failed: Invalid credentials
+[06-Jun-2025 20:00:41 Europe/Berlin] process-login.php started
+[06-Jun-2025 20:00:41 Europe/Berlin] Database connection obtained
+[06-Jun-2025 20:00:41 Europe/Berlin] POST request received
+[06-Jun-2025 20:00:41 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[06-Jun-2025 20:00:41 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[06-Jun-2025 20:00:41 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[06-Jun-2025 21:20:17 Europe/Berlin] process-login.php started
+[06-Jun-2025 21:20:17 Europe/Berlin] Database connection obtained
+[06-Jun-2025 21:20:17 Europe/Berlin] POST request received
+[06-Jun-2025 21:20:17 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[06-Jun-2025 21:20:17 Europe/Berlin] User authenticated successfully. User ID: 6, Role: admin
+[06-Jun-2025 21:20:17 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[06-Jun-2025 23:04:53 Europe/Berlin] process-login.php started
+[06-Jun-2025 23:04:53 Europe/Berlin] Database connection obtained
+[06-Jun-2025 23:04:53 Europe/Berlin] POST request received
+[06-Jun-2025 23:04:53 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[06-Jun-2025 23:04:53 Europe/Berlin] User authenticated successfully. User ID: 6, Role: admin
+[06-Jun-2025 23:04:53 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[07-Jun-2025 11:59:58 Europe/Berlin] process-login.php started
+[07-Jun-2025 11:59:58 Europe/Berlin] Database connection obtained
+[07-Jun-2025 11:59:58 Europe/Berlin] POST request received
+[07-Jun-2025 11:59:58 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[07-Jun-2025 11:59:58 Europe/Berlin] User authenticated successfully. User ID: 6, Role: admin
+[07-Jun-2025 11:59:58 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[07-Jun-2025 15:24:41 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:24:41 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:24:41 Europe/Berlin] POST request received
+[07-Jun-2025 15:24:41 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: Yes
+[07-Jun-2025 15:24:41 Europe/Berlin] Login failed: Invalid credentials
+[07-Jun-2025 15:25:52 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:25:52 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:25:52 Europe/Berlin] POST request received
+[07-Jun-2025 15:25:52 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 15:25:52 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 15:25:52 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:26:53 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:26:53 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:26:53 Europe/Berlin] POST request received
+[07-Jun-2025 15:26:53 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 15:26:53 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[07-Jun-2025 15:26:53 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:32:13 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:32:13 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:32:13 Europe/Berlin] POST request received
+[07-Jun-2025 15:32:13 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 15:32:13 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 15:32:13 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:47:53 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:47:53 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:47:53 Europe/Berlin] POST request received
+[07-Jun-2025 15:47:53 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 15:47:53 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[07-Jun-2025 15:47:53 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:48:57 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:48:57 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:48:57 Europe/Berlin] POST request received
+[07-Jun-2025 15:48:57 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 15:48:57 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 15:48:57 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:49:30 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:49:30 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:49:30 Europe/Berlin] POST request received
+[07-Jun-2025 15:49:30 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 15:49:30 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[07-Jun-2025 15:49:30 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 15:51:16 Europe/Berlin] process-login.php started
+[07-Jun-2025 15:51:16 Europe/Berlin] Database connection obtained
+[07-Jun-2025 15:51:16 Europe/Berlin] POST request received
+[07-Jun-2025 15:51:16 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 15:51:16 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 15:51:16 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 16:05:18 Europe/Berlin] process-login.php started
+[07-Jun-2025 16:05:18 Europe/Berlin] Database connection obtained
+[07-Jun-2025 16:05:18 Europe/Berlin] POST request received
+[07-Jun-2025 16:05:18 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 16:05:18 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[07-Jun-2025 16:05:18 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 16:06:11 Europe/Berlin] process-login.php started
+[07-Jun-2025 16:06:11 Europe/Berlin] Database connection obtained
+[07-Jun-2025 16:06:11 Europe/Berlin] POST request received
+[07-Jun-2025 16:06:11 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 16:06:11 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 16:06:11 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 16:11:48 Europe/Berlin] process-login.php started
+[07-Jun-2025 16:11:48 Europe/Berlin] Database connection obtained
+[07-Jun-2025 16:11:48 Europe/Berlin] POST request received
+[07-Jun-2025 16:11:48 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[07-Jun-2025 16:11:48 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[07-Jun-2025 16:11:48 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 18:19:44 Europe/Berlin] process-login.php started
+[07-Jun-2025 18:19:44 Europe/Berlin] Database connection obtained
+[07-Jun-2025 18:19:44 Europe/Berlin] POST request received
+[07-Jun-2025 18:19:44 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 18:19:44 Europe/Berlin] Login failed: Invalid credentials
+[07-Jun-2025 18:19:52 Europe/Berlin] process-login.php started
+[07-Jun-2025 18:19:52 Europe/Berlin] Database connection obtained
+[07-Jun-2025 18:19:52 Europe/Berlin] POST request received
+[07-Jun-2025 18:19:52 Europe/Berlin] Login attempt for email: test5@test.com, Remember Me: No
+[07-Jun-2025 18:19:52 Europe/Berlin] Login failed: Invalid credentials
+[07-Jun-2025 18:20:04 Europe/Berlin] process-login.php started
+[07-Jun-2025 18:20:04 Europe/Berlin] Database connection obtained
+[07-Jun-2025 18:20:04 Europe/Berlin] POST request received
+[07-Jun-2025 18:20:04 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[07-Jun-2025 18:20:04 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[07-Jun-2025 18:20:04 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[11-Jun-2025 14:19:58 Europe/Berlin] process-login.php started
+[11-Jun-2025 14:19:58 Europe/Berlin] Database connection obtained
+[11-Jun-2025 14:19:58 Europe/Berlin] POST request received
+[11-Jun-2025 14:19:58 Europe/Berlin] Login attempt for email: test5@test.com, Remember Me: No
+[11-Jun-2025 14:19:58 Europe/Berlin] Login failed: Invalid credentials
+[11-Jun-2025 14:20:08 Europe/Berlin] process-login.php started
+[11-Jun-2025 14:20:08 Europe/Berlin] Database connection obtained
+[11-Jun-2025 14:20:08 Europe/Berlin] POST request received
+[11-Jun-2025 14:20:08 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[11-Jun-2025 14:20:08 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[11-Jun-2025 14:20:08 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[11-Jun-2025 14:21:09 Europe/Berlin] process-login.php started
+[11-Jun-2025 14:21:09 Europe/Berlin] Database connection obtained
+[11-Jun-2025 14:21:09 Europe/Berlin] POST request received
+[11-Jun-2025 14:21:09 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[11-Jun-2025 14:21:09 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[11-Jun-2025 14:21:09 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[11-Jun-2025 16:02:39 Europe/Berlin] process-login.php started
+[11-Jun-2025 16:02:39 Europe/Berlin] Database connection obtained
+[11-Jun-2025 16:02:39 Europe/Berlin] POST request received
+[11-Jun-2025 16:02:39 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[11-Jun-2025 16:02:39 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[11-Jun-2025 16:02:39 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[13-Jun-2025 10:09:48 Europe/Berlin] process-login.php started
+[13-Jun-2025 10:09:48 Europe/Berlin] Database connection obtained
+[13-Jun-2025 10:09:48 Europe/Berlin] POST request received
+[13-Jun-2025 10:09:48 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[13-Jun-2025 10:09:48 Europe/Berlin] Login failed: Invalid credentials
+[13-Jun-2025 10:09:56 Europe/Berlin] process-login.php started
+[13-Jun-2025 10:09:56 Europe/Berlin] Database connection obtained
+[13-Jun-2025 10:09:56 Europe/Berlin] POST request received
+[13-Jun-2025 10:09:56 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[13-Jun-2025 10:09:56 Europe/Berlin] User authenticated successfully. User ID: 6, Role: admin
+[13-Jun-2025 10:09:56 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[13-Jun-2025 10:20:49 Europe/Berlin] process-login.php started
+[13-Jun-2025 10:20:49 Europe/Berlin] Database connection obtained
+[13-Jun-2025 10:20:49 Europe/Berlin] POST request received
+[13-Jun-2025 10:20:49 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[13-Jun-2025 10:20:49 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[13-Jun-2025 10:20:49 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[13-Jun-2025 11:27:16 Europe/Berlin] process-login.php started
+[13-Jun-2025 11:27:16 Europe/Berlin] Database connection obtained
+[13-Jun-2025 11:27:16 Europe/Berlin] POST request received
+[13-Jun-2025 11:27:16 Europe/Berlin] Login attempt for email: test4@test.com, Remember Me: No
+[13-Jun-2025 11:27:16 Europe/Berlin] User authenticated successfully. User ID: 9, Role: customer
+[13-Jun-2025 11:27:16 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 11:19:48 Europe/Berlin] process-login.php started
+[17-Jun-2025 11:19:48 Europe/Berlin] Database connection obtained
+[17-Jun-2025 11:19:48 Europe/Berlin] POST request received
+[17-Jun-2025 11:19:48 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[17-Jun-2025 11:19:48 Europe/Berlin] Login failed: Invalid credentials
+[17-Jun-2025 11:19:55 Europe/Berlin] process-login.php started
+[17-Jun-2025 11:19:55 Europe/Berlin] Database connection obtained
+[17-Jun-2025 11:19:55 Europe/Berlin] POST request received
+[17-Jun-2025 11:19:55 Europe/Berlin] Login attempt for email: demo5@gmail.com, Remember Me: No
+[17-Jun-2025 11:19:56 Europe/Berlin] User authenticated successfully. User ID: 10, Role: service_provider
+[17-Jun-2025 11:19:56 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 13:43:41 Europe/Berlin] process-login.php started
+[17-Jun-2025 13:43:41 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:43:41 Europe/Berlin] POST request received
+[17-Jun-2025 13:43:41 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[17-Jun-2025 13:43:41 Europe/Berlin] Login failed: Invalid credentials
+[17-Jun-2025 13:43:52 Europe/Berlin] process-login.php started
+[17-Jun-2025 13:43:52 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:43:52 Europe/Berlin] POST request received
+[17-Jun-2025 13:43:52 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[17-Jun-2025 13:43:52 Europe/Berlin] Login failed: Invalid credentials
+[17-Jun-2025 13:48:57 Europe/Berlin] process-login.php started
+[17-Jun-2025 13:48:57 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:48:57 Europe/Berlin] POST request received
+[17-Jun-2025 13:48:57 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[17-Jun-2025 13:48:57 Europe/Berlin] User authenticated successfully. User ID: 5, Role: admin
+[17-Jun-2025 13:48:57 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[17-Jun-2025 13:53:28 Europe/Berlin] process-login.php started
+[17-Jun-2025 13:53:28 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:53:28 Europe/Berlin] POST request received
+[17-Jun-2025 13:53:28 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 13:53:28 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 13:53:28 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:00:41 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:00:41 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:00:41 Europe/Berlin] POST request received
+[17-Jun-2025 14:00:41 Europe/Berlin] Login attempt for email: customer@customer.com, Remember Me: No
+[17-Jun-2025 14:00:41 Europe/Berlin] User authenticated successfully. User ID: 1, Role: customer
+[17-Jun-2025 14:00:41 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:07:21 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:07:21 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:07:21 Europe/Berlin] POST request received
+[17-Jun-2025 14:07:21 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 14:07:21 Europe/Berlin] Login failed: Invalid credentials
+[17-Jun-2025 14:07:29 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:07:29 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:07:29 Europe/Berlin] POST request received
+[17-Jun-2025 14:07:29 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 14:07:29 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 14:07:29 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:13:01 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:13:01 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:13:01 Europe/Berlin] POST request received
+[17-Jun-2025 14:13:01 Europe/Berlin] Login attempt for email: customer@customer.com, Remember Me: No
+[17-Jun-2025 14:13:01 Europe/Berlin] User authenticated successfully. User ID: 1, Role: customer
+[17-Jun-2025 14:13:01 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:20:17 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:20:17 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:20:17 Europe/Berlin] POST request received
+[17-Jun-2025 14:20:17 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 14:20:17 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 14:20:17 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:21:34 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:21:34 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:21:34 Europe/Berlin] POST request received
+[17-Jun-2025 14:21:34 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 14:21:34 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 14:21:34 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 14:27:56 Europe/Berlin] process-login.php started
+[17-Jun-2025 14:27:56 Europe/Berlin] Database connection obtained
+[17-Jun-2025 14:27:56 Europe/Berlin] POST request received
+[17-Jun-2025 14:27:56 Europe/Berlin] Login attempt for email: customer@customer.com, Remember Me: No
+[17-Jun-2025 14:27:56 Europe/Berlin] User authenticated successfully. User ID: 1, Role: customer
+[17-Jun-2025 14:27:56 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 20:24:02 Europe/Berlin] process-login.php started
+[17-Jun-2025 20:24:02 Europe/Berlin] Database connection obtained
+[17-Jun-2025 20:24:02 Europe/Berlin] POST request received
+[17-Jun-2025 20:24:02 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[17-Jun-2025 20:24:02 Europe/Berlin] User authenticated successfully. User ID: 5, Role: admin
+[17-Jun-2025 20:24:02 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php
+[17-Jun-2025 20:36:49 Europe/Berlin] process-login.php started
+[17-Jun-2025 20:36:49 Europe/Berlin] Database connection obtained
+[17-Jun-2025 20:36:49 Europe/Berlin] POST request received
+[17-Jun-2025 20:36:49 Europe/Berlin] Login attempt for email: customer@customer.com, Remember Me: No
+[17-Jun-2025 20:36:49 Europe/Berlin] User authenticated successfully. User ID: 1, Role: customer
+[17-Jun-2025 20:36:49 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 20:48:10 Europe/Berlin] process-login.php started
+[17-Jun-2025 20:48:10 Europe/Berlin] Database connection obtained
+[17-Jun-2025 20:48:10 Europe/Berlin] POST request received
+[17-Jun-2025 20:48:10 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 20:48:10 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 20:48:10 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 21:31:48 Europe/Berlin] process-login.php started
+[17-Jun-2025 21:31:48 Europe/Berlin] Database connection obtained
+[17-Jun-2025 21:31:48 Europe/Berlin] POST request received
+[17-Jun-2025 21:31:48 Europe/Berlin] Login attempt for email: provider@provider.com, Remember Me: No
+[17-Jun-2025 21:31:48 Europe/Berlin] User authenticated successfully. User ID: 2, Role: service_provider
+[17-Jun-2025 21:31:48 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 23:00:15 Europe/Berlin] process-login.php started
+[17-Jun-2025 23:00:15 Europe/Berlin] Database connection obtained
+[17-Jun-2025 23:00:15 Europe/Berlin] POST request received
+[17-Jun-2025 23:00:15 Europe/Berlin] Login attempt for email: customer@customer.com, Remember Me: No
+[17-Jun-2025 23:00:15 Europe/Berlin] User authenticated successfully. User ID: 1, Role: customer
+[17-Jun-2025 23:00:15 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[18-Jun-2025 00:30:56 Europe/Berlin] process-login.php started
+[18-Jun-2025 00:30:56 Europe/Berlin] Database connection obtained
+[18-Jun-2025 00:30:56 Europe/Berlin] POST request received
+[18-Jun-2025 00:30:56 Europe/Berlin] Login attempt for email: admin@example.com, Remember Me: No
+[18-Jun-2025 00:30:56 Europe/Berlin] User authenticated successfully. User ID: 5, Role: admin
+[18-Jun-2025 00:30:56 Europe/Berlin] Redirecting Admin to: /demo2/admin/index.php

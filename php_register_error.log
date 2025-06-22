@@ -1,0 +1,50 @@
+[06-Jun-2025 19:43:05 Europe/Berlin] process-register.php started
+[06-Jun-2025 19:43:05 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:43:05 Europe/Berlin] POST request received
+[06-Jun-2025 19:43:05 Europe/Berlin] Registration attempt for username: , email: demo5@demo.com, role: customer
+[06-Jun-2025 19:43:05 Europe/Berlin] Validation failed: Missing required fields
+[06-Jun-2025 19:43:36 Europe/Berlin] process-register.php started
+[06-Jun-2025 19:43:36 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:43:36 Europe/Berlin] POST request received
+[06-Jun-2025 19:43:36 Europe/Berlin] Registration attempt for username: , email: adadadad@gmail.com, role: customer
+[06-Jun-2025 19:43:36 Europe/Berlin] Validation failed: Missing required fields
+[06-Jun-2025 19:46:30 Europe/Berlin] process-register.php started
+[06-Jun-2025 19:46:30 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:46:30 Europe/Berlin] POST request received
+[06-Jun-2025 19:46:30 Europe/Berlin] Registration attempt for username: , email: demo5@demo.com, role: customer
+[06-Jun-2025 19:46:30 Europe/Berlin] Validation failed: Missing required fields
+[06-Jun-2025 19:49:15 Europe/Berlin] process-register.php started
+[06-Jun-2025 19:49:15 Europe/Berlin] Database connection obtained
+[06-Jun-2025 19:49:15 Europe/Berlin] POST request received
+[06-Jun-2025 19:49:15 Europe/Berlin] Registration attempt for username: adadad, email: demo5@gmail.com, role: service_provider
+[06-Jun-2025 19:49:16 Europe/Berlin] User registration successful for email: demo5@gmail.com
+[06-Jun-2025 19:49:16 Europe/Berlin] Automatic login successful for username: adadad
+[06-Jun-2025 19:49:16 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[07-Jun-2025 16:11:01 Europe/Berlin] process-register.php started
+[07-Jun-2025 16:11:01 Europe/Berlin] Database connection obtained
+[07-Jun-2025 16:11:01 Europe/Berlin] POST request received
+[07-Jun-2025 16:11:01 Europe/Berlin] Registration attempt for username: messages test, email: test6@test.com, role: customer
+[07-Jun-2025 16:11:01 Europe/Berlin] User registration successful for email: test6@test.com
+[07-Jun-2025 16:11:01 Europe/Berlin] Automatic login successful for username: messages test
+[07-Jun-2025 16:11:01 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 13:37:46 Europe/Berlin] process-register.php started
+[17-Jun-2025 13:37:46 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:37:46 Europe/Berlin] POST request received
+[17-Jun-2025 13:37:46 Europe/Berlin] Registration attempt for username: customer, email: customer@customer.com, role: customer
+[17-Jun-2025 13:37:46 Europe/Berlin] User registration successful for email: customer@customer.com
+[17-Jun-2025 13:37:46 Europe/Berlin] Automatic login successful for username: customer
+[17-Jun-2025 13:37:46 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 13:38:44 Europe/Berlin] process-register.php started
+[17-Jun-2025 13:38:44 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:38:44 Europe/Berlin] POST request received
+[17-Jun-2025 13:38:44 Europe/Berlin] Registration attempt for username: provider, email: provider@provider.com, role: service_provider
+[17-Jun-2025 13:38:44 Europe/Berlin] User registration successful for email: provider@provider.com
+[17-Jun-2025 13:38:44 Europe/Berlin] Automatic login successful for username: provider
+[17-Jun-2025 13:38:44 Europe/Berlin] Redirecting User to: /demo2/dashboard.php
+[17-Jun-2025 13:44:54 Europe/Berlin] process-register.php started
+[17-Jun-2025 13:44:54 Europe/Berlin] Database connection obtained
+[17-Jun-2025 13:44:54 Europe/Berlin] POST request received
+[17-Jun-2025 13:44:54 Europe/Berlin] Registration attempt for username: admin, email: admin@example.com, role: customer
+[17-Jun-2025 13:44:54 Europe/Berlin] User registration successful for email: admin@example.com
+[17-Jun-2025 13:44:54 Europe/Berlin] Automatic login successful for username: admin
+[17-Jun-2025 13:44:54 Europe/Berlin] Redirecting User to: /demo2/dashboard.php

@@ -1,0 +1,684 @@
+[11-Jun-2025 16:54:20 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:54:20 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:54:20 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:54:20 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:54:20 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:54:20 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:54:20 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653660_6
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653660_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - Generated Signature: 4eee19e04ef900cfa913956e7a4d98fe
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653660_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:54:20 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:54:45 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:54:45 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:54:45 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:54:45 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:54:45 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:54:45 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:54:45 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653685_6
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653685_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - Generated Signature: 36db8171e3bc11bdd28deee94c88d530
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653685_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:54:45 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:54:48 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:54:48 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:54:48 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:54:48 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:54:48 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:54:48 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:54:48 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653688_6
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653688_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - Generated Signature: 89f99b9d4535f6571728df88ff987d6d
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653688_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:54:48 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:55:03 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:55:03 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:55:03 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:55:03 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:55:03 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:55:03 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:55:03 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653703_6
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653703_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - Generated Signature: 5467bdd76f31ec707675877d359d039d
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653703_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:55:03 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:55:05 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:55:05 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:55:05 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:55:05 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:55:05 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:55:05 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:55:05 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653705_6
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653705_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - Generated Signature: 2e310991d40f6df1f516ff3c59069399
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653705_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:55:05 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:55:07 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:55:07 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:55:07 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:55:07 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:55:07 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:55:07 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:55:07 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653707_6
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653707_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - Generated Signature: ea44495f59c986d4f5723737daef53e1
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653707_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:55:07 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:55:09 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:55:09 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:55:09 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:55:09 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:55:09 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:55:09 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:55:09 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653709_6
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653709_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - Generated Signature: 530a226fd565c0d7448db3fcd1dafec8
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653709_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:55:09 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 16:55:11 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 16:55:11 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 16:55:11 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 16:55:11 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 16:55:11 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 16:55:11 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 16:55:11 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749653711_6
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749653711_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - Generated Signature: 928b199671e924cfb9270ca284148195
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749653711_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 16:55:11 Europe/Berlin] Process Payment Database Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'payment_id' in 'field list' for booking ID: 6
+[11-Jun-2025 20:10:40 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 20:10:40 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 20:10:40 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 20:10:40 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 20:10:40 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 20:10:40 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 20:10:40 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-07 18:17:54
+    [notes] => 
+    [payment_id] => 
+    [payfast_pf_payment_id] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749665440_6
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749665440_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Generated Signature: 48095671af788bb41b5b28f633225f1d
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749665440_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - Booking ID 6 updated with payment_id PF_1749665440_6
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - PayFast Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 20:10:40 Europe/Berlin] Process Payment Debug - About to output HTML for PayFast form submission.
+[11-Jun-2025 20:14:51 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[11-Jun-2025 20:14:51 Europe/Berlin] --- process-payment.php: auth.php included ---
+[11-Jun-2025 20:14:51 Europe/Berlin] --- process-payment.php: database.php included ---
+[11-Jun-2025 20:14:51 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[11-Jun-2025 20:14:51 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 20:14:51 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[11-Jun-2025 20:14:51 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-11 20:10:40
+    [notes] => 
+    [payment_id] => PF_1749665440_6
+    [payfast_pf_payment_id] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749665691_6
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749665691_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Generated Signature: 695c5f865db6566117cb991bc49a43ec
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749665691_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - Booking ID 6 updated with payment_id PF_1749665691_6
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - PayFast Process URL: https://sandbox.payfast.co.za/eng/process
+[11-Jun-2025 20:14:51 Europe/Berlin] Process Payment Debug - About to output HTML for PayFast form submission.
+[13-Jun-2025 11:27:25 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[13-Jun-2025 11:27:25 Europe/Berlin] --- process-payment.php: auth.php included ---
+[13-Jun-2025 11:27:25 Europe/Berlin] --- process-payment.php: database.php included ---
+[13-Jun-2025 11:27:25 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[13-Jun-2025 11:27:25 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[13-Jun-2025 11:27:25 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[13-Jun-2025 11:27:25 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-11 20:14:51
+    [notes] => 
+    [payment_id] => PF_1749665691_6
+    [payfast_pf_payment_id] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749806845_6
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749806845_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Generated Signature: 7c52b006c115c17a995bb1a012e7f664
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749806845_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - Booking ID 6 updated with payment_id PF_1749806845_6
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - PayFast Process URL: https://sandbox.payfast.co.za/eng/process
+[13-Jun-2025 11:27:25 Europe/Berlin] Process Payment Debug - About to output HTML for PayFast form submission.
+[13-Jun-2025 11:27:58 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[13-Jun-2025 11:27:58 Europe/Berlin] --- process-payment.php: auth.php included ---
+[13-Jun-2025 11:27:58 Europe/Berlin] --- process-payment.php: database.php included ---
+[13-Jun-2025 11:27:58 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[13-Jun-2025 11:27:58 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[13-Jun-2025 11:27:58 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[13-Jun-2025 11:27:58 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Booking ID from GET: 6
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - User ID from Session: 9
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 6
+    [service_id] => 3
+    [customer_id] => 9
+    [provider_id] => 10
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-26 15:28:00
+    [total_amount] => 1233.00
+    [payment_status] => pending
+    [payment_method] => online
+    [created_at] => 2025-06-07 15:28:43
+    [updated_at] => 2025-06-13 11:27:25
+    [notes] => 
+    [payment_id] => PF_1749806845_6
+    [payfast_pf_payment_id] => 
+    [service_title] => adadad
+    [customer_name] => test4
+    [customer_email] => test4@test.com
+    [provider_name] => adadad
+)
+
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1749806878_6
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => test4
+    [name_last] => 
+    [email_address] => test4@test.com
+    [m_payment_id] => PF_1749806878_6
+    [amount] => 1233.00
+    [item_name] => adadad
+    [custom_str1] => 6
+    [custom_str2] => 9
+)
+
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Generated Signature: 3566c588dbbf4971cf383fc5a85dc830
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=test4&email_address=test4%40test.com&m_payment_id=PF_1749806878_6&amount=1233.00&item_name=adadad&custom_str1=6&custom_str2=9&passphrase=Rammala65123
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - Booking ID 6 updated with payment_id PF_1749806878_6
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - PayFast Process URL: https://sandbox.payfast.co.za/eng/process
+[13-Jun-2025 11:27:58 Europe/Berlin] Process Payment Debug - About to output HTML for PayFast form submission.
+[17-Jun-2025 14:28:03 Europe/Berlin] --- process-payment.php SCRIPT EXECUTION STARTED ---
+[17-Jun-2025 14:28:03 Europe/Berlin] --- process-payment.php: auth.php included ---
+[17-Jun-2025 14:28:03 Europe/Berlin] --- process-payment.php: database.php included ---
+[17-Jun-2025 14:28:03 Europe/Berlin] PayFast Configuration Loaded - Base URL: https://7998-102-66-138-148.ngrok-free.app
+[17-Jun-2025 14:28:03 Europe/Berlin] PayFast Configuration Loaded - Process URL: https://sandbox.payfast.co.za/eng/process
+[17-Jun-2025 14:28:03 Europe/Berlin] PayFast Configuration Loaded - Test Mode: Yes
+[17-Jun-2025 14:28:03 Europe/Berlin] --- process-payment.php: payfast.php included ---
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Booking ID from GET: 3
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - User ID from Session: 1
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Booking Data from DB: Array
+(
+    [id] => 3
+    [service_id] => 1
+    [customer_id] => 1
+    [provider_id] => 2
+    [status] => accepted
+    [completion_status] => completed
+    [booking_date] => 2025-06-19 14:06:00
+    [total_amount] => 100.00
+    [payment_status] => pending
+    [payment_method] => online
+    [payment_id] => 
+    [payment_date] => 
+    [payfast_pf_payment_id] => 
+    [notes] => 
+    [created_at] => 2025-06-17 14:06:53
+    [updated_at] => 2025-06-17 14:21:01
+    [service_title] => test2
+    [customer_name] => customer
+    [customer_email] => customer@customer.com
+    [provider_name] => provider
+)
+
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Generated m_payment_id: PF_1750163283_3
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Payment Data (before signature sorting): Array
+(
+    [merchant_id] => 10039536
+    [merchant_key] => s4arohgrd1ffl
+    [return_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=success
+    [cancel_url] => https://7998-102-66-138-148.ngrok-free.app/customer-messages.php?payment=cancelled
+    [notify_url] => https://7998-102-66-138-148.ngrok-free.app/payment-notify.php
+    [name_first] => customer
+    [name_last] => 
+    [email_address] => customer@customer.com
+    [m_payment_id] => PF_1750163283_3
+    [amount] => 100.00
+    [item_name] => test2
+    [custom_str1] => 3
+    [custom_str2] => 1
+)
+
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Generated Signature: 5325d23a6f6cf1456b2fe894a8c3b3c0
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - String to Hash (for signature): merchant_id=10039536&merchant_key=s4arohgrd1ffl&return_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dsuccess&cancel_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fcustomer-messages.php%3Fpayment%3Dcancelled&notify_url=https%3A%2F%2F7998-102-66-138-148.ngrok-free.app%2Fpayment-notify.php&name_first=customer&email_address=customer%40customer.com&m_payment_id=PF_1750163283_3&amount=100.00&item_name=test2&custom_str1=3&custom_str2=1&passphrase=Rammala65123
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - Booking ID 3 updated with payment_id PF_1750163283_3
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - PayFast Process URL: https://sandbox.payfast.co.za/eng/process
+[17-Jun-2025 14:28:03 Europe/Berlin] Process Payment Debug - About to output HTML for PayFast form submission.
