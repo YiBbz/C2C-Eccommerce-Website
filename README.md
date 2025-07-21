@@ -18,7 +18,7 @@ A comprehensive freelance marketplace platform where service providers can offer
 - CSS3
 - JavaScript
 - PHP
-- Bootstrap 5
+- Tailwind
 - Pusher API for real-time chat
 - MySQL Database
 
